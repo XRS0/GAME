@@ -1,0 +1,60 @@
+[gd_scene load_steps=5 format=3 uid="uid://b1nr5yjfa0tl2"]
+
+[ext_resource type="FontFile" uid="uid://bucbh7uhpf5wr" path="res://pravdanewspapercyr_eng.otf" id="1_cikyk"]
+[ext_resource type="PackedScene" uid="uid://dy8ecsladm4du" path="res://bg.tscn" id="2_8mcmf"]
+
+[sub_resource type="GDScript" id="GDScript_187f8"]
+script/source = "extends Node2D
+
+
+func _ready():
+	var viewport = get_viewport()
+	viewport.set_size(Vector2(1160, 625))
+
+func _on_play_pressed():
+	get_tree().quit()
+
+
+func _on_play_2_pressed():
+	get_tree().change_scene_to_file(\"res://lvl.tscn\")
+"
+
+[sub_resource type="GDScript" id="GDScript_sjlb2"]
+script/source = "extends ParallaxBackground
+
+var speedChangeBackground = 5
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta):
+	scroll_offset.x -= speedChangeBackground
+"
+
+[node name="Menu" type="Node2D"]
+position = Vector2(2.08165e-12, -24.09)
+script = SubResource("GDScript_187f8")
+
+[node name="quit" type="Button" parent="."]
+offset_left = 390.0
+offset_top = 370.0
+offset_right = 746.0
+offset_bottom = 462.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("1_cikyk")
+theme_override_font_sizes/font_size = 32
+text = "выйти"
+
+[node name="play" type="Button" parent="."]
+offset_left = 385.0
+offset_top = 243.0
+offset_right = 741.0
+offset_bottom = 335.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("1_cikyk")
+theme_override_font_sizes/font_size = 32
+text = "Играть"
+
+[node name="bg" parent="." instance=ExtResource("2_8mcmf")]
+script = SubResource("GDScript_sjlb2")
+
+[connection signal="pressed" from="quit" to="." method="_on_play_pressed"]
+[connection signal="pressed" from="play" to="." method="_on_play_2_pressed"]

@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://dhatfkd2bqv4a"]
+
+[node name="LVL" type="Node2D"]
+
+[node name="Label" type="Label" parent="."]
+offset_left = 508.0
+offset_top = 290.0
+offset_right = 640.0
+offset_bottom = 365.0
+theme_override_font_sizes/font_size = 50
+text = "LVL 1"

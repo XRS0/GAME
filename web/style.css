@@ -1,0 +1,54 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2em;
+    margin: 0;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+.definition {
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+.timeline {
+    list-style: none;
+    padding: 0;
+}
+
+.timeline li {
+    border-bottom: 1px solid #ddd;
+    padding: 5px;
+}
+
+.separator line {
+    stroke-width: 0.5px;
+}
+
+
+.navigation {
+    text-align: right;
+}
+
+.navigation a {
+    margin-right: 10px;
+    text-decoration: none;
+}
