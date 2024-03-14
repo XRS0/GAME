@@ -41,6 +41,10 @@ h3{
     text-decoration: underline 2px #D13B3B;
 }
 
+h4{
+    font-family: Pravda;
+}
+
 main {
     padding: 0px 20px 20px 20px;
 }
@@ -64,6 +68,10 @@ main {
     width: 50%;
 }
 
+.material-symbols-outlined{
+    margin: 0;
+    padding: 0 ;
+}
 
 .but{
     color: white;
@@ -97,4 +105,25 @@ main {
 .navigation a {
     margin-right: 10px;
     text-decoration: none;
+}
+
+.prehistory {
+    width: 100%;
+    margin: 0;
+    padding: 15px;
+    background-color: #D13B3B;
+    color: white;
+}
+
+.block1{
+    display:flex;
+    flex-wrap: nowrap;
+}
+
+.slaid1 {
+    width: 40%;
+}
+
+.slaid2 {
+    width: 60%;
 }
