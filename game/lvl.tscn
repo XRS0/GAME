@@ -1,11 +1,22 @@
-[gd_scene format=3 uid="uid://dhatfkd2bqv4a"]
+[gd_scene load_steps=3 format=3 uid="uid://dhatfkd2bqv4a"]
+
+[ext_resource type="Texture2D" uid="uid://layu7731yr4i" path="res://layers/background1.png" id="1_fcsdq"]
+[ext_resource type="FontFile" uid="uid://bw2ic2bq3cv6p" path="res://fonts/raydis-font-1710198231-0/raydis.ttf" id="2_egius"]
 
 [node name="LVL" type="Node2D"]
 
-[node name="Label" type="Label" parent="."]
-offset_left = 508.0
-offset_top = 290.0
-offset_right = 640.0
-offset_bottom = 365.0
-theme_override_font_sizes/font_size = 50
+[node name="Background1" type="Sprite2D" parent="."]
+position = Vector2(581, 324)
+scale = Vector2(0.648438, 0.648438)
+texture = ExtResource("1_fcsdq")
+
+[node name="Label" type="Label" parent="Background1"]
+offset_left = -154.217
+offset_top = -251.373
+offset_right = 122.783
+offset_bottom = -151.373
+theme_override_colors/font_color = Color(0.905882, 0, 0.0980392, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_egius")
+theme_override_font_sizes/font_size = 100
 text = "LVL 1"
