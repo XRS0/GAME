@@ -67,6 +67,14 @@ main {
     font-family: Cormorant;
 }
 
+.pr {
+    border-bottom: 3px solid white;
+    font-family: raydis;
+    font-size: 35px;
+    width: 650px;
+}
+
+
 .play{
     text-align: center;
     width: 50%;
@@ -126,14 +134,29 @@ main {
 }
 
 .block1{
-    display:flex;
+    display: flex;
     flex-wrap: nowrap;
 }
 
 .slaid1 {
-    width: 40%;
+    width: 100%;
 }
 
 .slaid2 {
-    width: 60%;
+    width: 100%;
+}
+
+@media (max-width: 700px) {
+    .pr {
+        font-size: 20px;
+    }
+
+    .block1 {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .slaid2 {
+        width: 50%;
+    }
 }
