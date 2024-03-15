@@ -1,3 +1,20 @@
+@font-face {
+    font-family: raydis;
+    src: url(../fonts/raydis-font-1710198231-0/raydis.ttf);
+}
+
+@font-face {
+    font-family: Pravda;
+    src: url(../fonts/Pravda\ Newspaper\ CYR-ENG/pravdanewspapercyr_eng.otf);
+}
+
+@font-face {
+    font-family: Cormorant;
+    src: url(../fonts/Cormorant_Infant/CormorantInfant-Light.ttf);
+}
+
+
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -14,24 +31,60 @@ h1 {
     margin: 0;
 }
 
+h2{
+    margin-top: 0px ;
+    margin-bottom:10px ;
+}
+
 h3{
-    
-    font-size: medium;
+    margin-top: 10px;
+    font-size:20px;
     color: #D13B3B;
-    text-decoration: underline 3px #D13B3B;
+    text-decoration: underline 2px #D13B3B;
+}
+
+h4{
+    font-family: Pravda;
 }
 
 main {
-    padding: 20px;
+    margin: 0;
+    padding: 0;
 }
 
-section {
-    margin-bottom: 20px;
-}
 
 .definition {
-    padding: 10px;
+    padding: 0px 10px 10px 10px;
+    display:flex;
+    flex-wrap: nowrap;
+}
+
+.descrip{
     width: 50%;
+    margin-right: 20px;
+    margin-left: 20px;
+    font-size: 18px;
+    font-family: Cormorant;
+}
+
+.play{
+    text-align: center;
+    width: 50%;
+}
+
+.material-symbols-outlined{
+    margin: 0;
+    padding: 0 ;
+}
+
+.but{
+    color: white;
+    background-color: #D13B3B;
+    font-size: x-large;
+    padding: 10px 60px 10px 60px;
+    border-radius: 8px;
+    margin-top: 15px;
+    font-family: Pravda;
 }
 
 .timeline {
@@ -45,7 +98,13 @@ section {
 }
 
 .separator line {
-    stroke-width: 0.5px;
+    stroke-width: 4px;
+
+}
+.separator{
+    margin: 0;
+    padding: 0;
+    width: 2px;
 }
 
 
@@ -56,4 +115,25 @@ section {
 .navigation a {
     margin-right: 10px;
     text-decoration: none;
+}
+
+.prehistory {
+    width: 100%;
+    margin: 0;
+    padding: 15px;
+    background-color: #D13B3B;
+    color: white;
+}
+
+.block1{
+    display:flex;
+    flex-wrap: nowrap;
+}
+
+.slaid1 {
+    width: 40%;
+}
+
+.slaid2 {
+    width: 60%;
 }
