@@ -139,7 +139,6 @@ main {
 }
 
 .slaid1 {
-<<<<<<< HEAD
     width: 100%;
 }
 
@@ -160,16 +159,4 @@ main {
     .slaid2 {
         width: 50%;
     }
-=======
-    width: 40%;
-    border-bottom: 3px solid white;
-    border-right: 3px solid white;4
-    padding-right: 10px;
-}
-
-.slaid2 {
-    width: 50%;
-    border-bottom: 3px solid white;
-    padding-left: 20px;
->>>>>>> b0265d9f8749a580328f1e04dc482d8c0b257a58
 }
