@@ -12,9 +12,6 @@
     font-family: Cormorant;
     src: url(../fonts/Cormorant_Infant/CormorantInfant-Light.ttf);
 }
-
-
-
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -33,7 +30,7 @@ h1 {
 
 h2{
     margin-top: 0px ;
-    margin-bottom:10px ;
+    margin-bottom: 0px ;
 }
 
 h3{
@@ -52,11 +49,16 @@ main {
     padding: 0;
 }
 
+footer{
+    background-color: #D13B3B;
+    display: flex;
+}
 
 .definition {
     padding: 0px 10px 10px 10px;
     display:flex;
     flex-wrap: nowrap;
+
 }
 
 .descrip{
@@ -71,7 +73,7 @@ main {
     border-bottom: 3px solid white;
     font-family: raydis;
     font-size: 35px;
-    width: 650px;
+    width: 60%;
 }
 
 
@@ -133,22 +135,27 @@ main {
     color: white;
 }
 
-.block1{
+.block{
     display: flex;
     flex-wrap: nowrap;
+    border-bottom: 3px solid white;
 }
 
 .slaid1 {
     width: 100%;
     padding: 10px;
     font-size: 15px;
+
 }
 
 .slaid2 {
     width: 100%;
-    padding: 10px;
+    padding: 0px 10px 0px 10px;
     font-size: 15px;
+    margin: 0;
 }
+
+
 
 @media (max-width: 700px) {
     .pr {
@@ -156,7 +163,7 @@ main {
         width: 300px;
     }
 
-    .block1 {
+    .block {
         display: flex;
         flex-wrap: wrap;
     }
